@@ -4,7 +4,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
 import matplotlib.colors as mcolors
 
-GRIDSIZE = 50
+GRIDSIZE = 60
 dt = 0.1
 
 def update_field(field):
@@ -33,5 +33,5 @@ if __name__ == "__main__":
         ax.set_zlabel("Z")
         ax.set_title("Quantum Field Vaccum Fluctuations (Frame {})".format(frame))
     
-    animate = FuncAnimation(fig, update_frame, frames=100, interval=10)
+    animate = FuncAnimation(fig, update_frame, frames=100, interval=1000)
     plt.show()
