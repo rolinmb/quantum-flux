@@ -11,8 +11,8 @@ DT = 0.01
 DX = (X_MAX - X_MIN) / GRID_SIZE
 DY = (Y_MAX - Y_MIN) / GRID_SIZE
 
-SIGMA = 1
-k0 = 5
+SIGMA = 1 # Gaussian Wave Packet Initial Width
+k0 = 5 # Initial Wavenumber (look into de Broglie relation: p=ℏk)
 
 def V(x, y): # Potential function (harmonic oscillator)
     return 0.5 * (x**2 + y**2)
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     def update(frame):
         ax.cla()
         ax.plot_surface(X, Y, np.abs(psi)**2, cmap='viridis', edgecolor='none')
-        ax.set_title(f'Time evolution (Frame {frame})')
+        ax.set_title(f'Schrödinger Equation 3D Time evolution (Frame {frame})')
         ax.set_xlabel('X')
         ax.set_ylabel('Y')
         ax.set_zlabel('Probability Density')

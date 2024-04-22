@@ -29,7 +29,7 @@ if __name__ == "__main__":
     def update(frame):
         ax.cla()
         ax.plot(x, np.abs(psi)**2, color='b')
-        ax.set_title(f'Time evolution (Frame {frame})')
+        ax.set_title(f'Schrödinger Equation 2D Time evolution (Frame {frame})')
         ax.set_xlabel('Position')
         ax.set_ylabel('Probability Density')
         evolve()
