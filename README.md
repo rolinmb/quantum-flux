@@ -1,7 +1,7 @@
-Attempting to create a visualization of quantum vaccum fluctuations in python.
+Attempting to create a visualization of quantum vaccum fluctuations in python with the help of ChatGPT.
 
 src/laplacian.py
-	- Evolution of random data accodring to the Laplacian
+	- Evolution of Generic Quantum Field fluctuations given random data accodring to the Laplacian
 
 src/schrodinger.py
 	- Evolution of the Schrödinger Equation in two dimensions (representing an Electron); written with the help of ChatGPT
@@ -20,3 +20,6 @@ src/higgsabelian.py
 
 src/qfield.py
 	- Evolution of the Gauge-Invariant Lagrangian for Quantum Chromodynamics (representing how the dynamics of quarks may evolve; only represents a simple diffusion process for now); written with the help of ChatGPT
+
+src/kleingordon.py
+	- Evolution of the Klein-Gordon Field (representing spin-0 particles which satisfy the Klein-Gordon Equation); written with the help of ChatGPT

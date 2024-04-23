@@ -4,7 +4,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
 import matplotlib.colors as mcolors
 
-GRIDSIZE = 60
+GRIDSIZE = 40
 dt = 0.1
 
 def update_field(field):
@@ -20,8 +20,8 @@ if __name__ == "__main__":
     ax = fig.add_subplot(111, projection="3d")
     ax.view_init(elev=30, azim=45)
     field = np.random.randn(GRIDSIZE, GRIDSIZE, GRIDSIZE)
-
-    def update_frame(frame):
+    
+    def update_frame_norm(frame):
         global field
         ax.clear()
         field = update_field(field)
@@ -32,6 +32,19 @@ if __name__ == "__main__":
         ax.set_ylabel("Y")
         ax.set_zlabel("Z")
         ax.set_title("Quantum Field Vaccum Fluctuations (Frame {})".format(frame))
-    
-    animate = FuncAnimation(fig, update_frame, frames=100, interval=1000)
+    """
+    def update_frame_quiver(frame):
+        global field
+        ax.clear()
+        field = update_field(field)
+        x, y, z = np.meshgrid(np.arange(GRIDSIZE), np.arange(GRIDSIZE), np.arange(GRIDSIZE))
+        u, v, w = np.gradient(field)
+        ax.quiver(x, y, z, u, v, w, length=0.2)
+        ax.set_xlabel("X")
+        ax.set_ylabel("Y")
+        ax.set_zlabel("Z")
+        ax.set_title("Quantum Field Vacuum Fluctuations (Frame {})".format(frame))
+    """
+    animate = FuncAnimation(fig, update_frame_norm, frames=100, interval=1000)
+    #animate = FuncAnimation(fig, update_frame_quiver, frames=100, interval=1000)
     plt.show()
