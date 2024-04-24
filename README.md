@@ -23,3 +23,6 @@ src/qfield.py
 
 src/kleingordon.py
 	- Evolution of the Klein-Gordon Field (representing spin-0 particles which satisfy the Klein-Gordon Equation); written with the help of ChatGPT
+
+src/qharmosc.py
+	- Probability densities |ψn(x)|2 for the bound eigenstates, beginning with the ground state (0), increasing through each excited state upwards; written with the help of ChatGPT
