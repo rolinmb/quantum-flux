@@ -26,3 +26,9 @@ src/kleingordon.py
 
 src/qharmosc.py
 	- Probability densities |ψn(x)|2 for the bound eigenstates, beginning with the ground state (0), increasing through each excited state upwards; written with the help of ChatGPT
+
+src/quark.py
+	- Evolution of a fermionic quark field / wavefunction / probability density in 3 dimensions; written with the help of ChatGPT
+
+src/neutrino.py
+	- Evolution of a fermionic neutrino field / wavefunction / probability density in 3 dimensions; written with the help of ChatGPT
