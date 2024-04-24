@@ -18,7 +18,6 @@ if __name__ == "__main__":
     x = np.linspace(X_MIN, X_MAX, GRID_SIZE)
     y = np.linspace(Y_MIN, Y_MAX, GRID_SIZE)
     X, Y = np.meshgrid(x, y)
-    
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 

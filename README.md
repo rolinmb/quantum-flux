@@ -32,3 +32,6 @@ src/quark.py
 
 src/neutrino.py
 	- Evolution of a fermionic neutrino field / wavefunction / probability density in 3 dimensions; written with the help of ChatGPT
+
+src/collision.py
+	- Evolution of two Gaussian Wave Packet probability distributions colliding in 2 dimensions; written with the help of ChatGPT
